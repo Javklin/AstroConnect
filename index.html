@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Map</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>AstroConnect</h1>
+    <h2>La carte des passionnés d'astronomie</h2>
+    <div id="menu">
+        <button onclick="loadStars('nearest')">Distance</button>
+        <button onclick="loadStars('brightest')">Luminescence</button>
+        <button onclick="loadStars('hottest')">Température</button>
+        <button onclick="loadStars('largest')">Circonférence</button>
+        <button onclick="loadStars('planets')">Planètes</button>
+
+                <div>
+                    <label>
+                        <input type="radio" name="constellation" value="avec" id="avec-constellation"> Croissant
+                    </label>
+                    <label>
+                        <input type="radio" name="constellation" value="sans" id="sans-constellation" checked> Décroissant
+                    </label>
+                </div>
+            </div>
+
+            
+    </div>
+    <div id="sky-map"></div>
+    <script src="script.js"></script>
+</body>
+</html>
